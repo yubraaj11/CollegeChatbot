@@ -24,10 +24,10 @@ entities:
 #       - type: from_entity
 #         entity: program
 
-# actions:
-#   - action_which_program
-#   - action_explain_program
-#   - action_query_database
+actions:
+  - action_which_program
+  - action_explain_program
+  - action_query_database
 
 responses:
   utter_greet:
