@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-program",
+      "2": "I-program",
+      "3": "L-program",
+      "4": "U-program",
+      "5": "B-rank",
+      "6": "I-rank",
+      "7": "L-rank",
+      "8": "U-rank",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-program": 1,
+      "I-program": 2,
+      "L-program": 3,
+      "U-program": 4,
+      "B-rank": 5,
+      "I-rank": 6,
+      "L-rank": 7,
+      "U-rank": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

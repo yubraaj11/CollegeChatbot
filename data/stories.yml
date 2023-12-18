@@ -51,3 +51,8 @@ stories:
   steps: 
   - intent: user_commends
   - action: utter_loved_to_help
+
+- story: Admission Probability
+  steps:
+    - intent: admission_with_rank_in_particular_program
+    - action: action_admission_confidence
