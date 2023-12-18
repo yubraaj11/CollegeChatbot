@@ -28,6 +28,7 @@ actions:
   - action_which_program
   - action_explain_program
   - action_query_database
+  - action_admission_confidence
 
 responses:
   utter_greet:
