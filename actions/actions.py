@@ -51,7 +51,7 @@ class ActionQueryDatabase(Action):
 
                 if rows:
                     for row in rows:
-                        index, prog, program_name, fee, CourseDuration, SeatsNo, hod = row
+                        prog, program_name, fee, CourseDuration, SeatsNo, hod = row
                         response = (
                             f"The program in question is '{program_name}' with an enrollment capacity of "
                             f"{SeatsNo} seats. Its duration spans over {CourseDuration}, and the overall fee "
@@ -78,23 +78,7 @@ class ActionSpecifyProgram(Action):
 
         return []
 
-class ActionHelloWorld(Action):
 
-    def name(self) -> Text:
-        return "action_explain_program"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        program_entity = next(tracker.get_latest_entity_values('program'), None)
-        if program_entity:
-            dispatcher.utter_message(text=f"Your requested program is '{program_entity}'.")
-        else: 
-            dispatcher.utter_message(text="Sorry I didnt get that")
-        # dispatcher.utter_message(text="Hello World!")
-
-        return []
 
 class ActionAdmissionConfidence(Action):
     def name(self) -> Text:
@@ -105,7 +89,7 @@ class ActionAdmissionConfidence(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         program_entity = next(tracker.get_latest_entity_values("program"), None)
-        rank = next(tracker.get_latest_entity_values("rank"), None)
+        rank = int(next(tracker.get_latest_entity_values("rank"), None))
 
         if program_entity == 'bct':
             if rank <= 5000:
