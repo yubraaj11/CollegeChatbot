@@ -30,62 +30,202 @@ nlu:
     - bye bye
     - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
 
-- intent: deny
+- intent: program_info
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - I want to know more about college programs.
+    - I want to learn about programms college offers.
+    - Provide me information about college programs.
+    - I want to know about degrees college offers.
+    - I need to know about programs in college.
+    - Please provide me information about college programs.
+    - Please guide me to inform about college programs.
+    - I need to learn about college programs.
+    - I want to know about the programs college offer.
+    - Provide me information of college programs.
+    - Inform me about programs in college.
+    - Inform me about degrees in college.
+    - I want to learn about college degrees.
+    - I want to know about courses college offers.
+    - Tell me about the courses in college.
+    
+    
+- intent: program_name
+  examples: |
+    - [bct](program) 
+    - [bce](program)
+    - [barch](program)
+    - [bel](program)
+    - [bex](program)
+    - [bme](program)
+    - [computer engineering](program)
+    - [comp eng](program)
+    - [computer](program)
+    - [civil engineering](program)
+    - [civil eng](program)
+    - [civil](program)
+    - [architecture](program)
+    - [bachelor in architecture](program)
+    - [b.arch](program)
+    - [electrical engineering](program)
+    - [electrical](program)
+    - [electronics, communication and informtion engineering](program)
+    - [electronics](program)
+    - [electronics engineering](program)
+    - [mechanical engineering](program)
+    - [mechanical](program)
+    - [mechanical eng](program)
+    - [applied science](program)
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
 
-- intent: mood_unhappy
+- synonym: bct
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - computer engineering
+    - comp eng
+    - computer
 
-- intent: bot_challenge
+
+- synonym: bce
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - civil engineering
+    - civil eng
+    - civil
+
+- synonym: barch
+  examples: |
+    - archi
+    - architecture 
+    - bachelor in architecture
+
+- synonym: bel
+  examples: |
+    - electrical engineering
+    - electrical
+
+- synonym: bex
+  examples: |
+    - electronics, communication and informtion engineering
+    - electronics
+    - electronics engineering
+
+- synonym: bme
+  examples: |
+    - mechanical engineering
+    - mechanical 
+    - mechanical eng
+
+- synonym: as
+  examples: |
+    - applied science
+
+- intent: college_detail
+  examples: |
+    - Can you provide details regarding Kathmandu Engineering College?
+    - I'm seeking information about Kathmandu Engineering College
+    - Could you share some insights into Kathmandu Engineering College
+    - I'm interested in knowing more about Kathmandu Engineering College
+    - Can you elaborate on Kathmandu Engineering College? 
+    - I'm curious about Kathmandu Engineering College 
+    - Could you provide an overview of Kathmandu Engineering College
+    - I'm looking for information about Kathmandu Engineering College
+    - Can you shed some light on Kathmandu Engineering College? 
+    - I'm eager to learn more about Kathmandu Engineering College.
+    - Tell me about the college 
+    - I want to more about the college
+    - Provide me insights me about the college 
+    - i want to know about college
+    - Can you provide details regarding college?
+    - I'm seeking information about college
+    - Could you share some insights into college
+    - I'm interested in knowing more about college
+    - Can you elaborate on college? 
+    - I'm curious about college 
+    - Could you provide an overview of college
+    - I'm looking for information about college
+    - Can you shed some light on college? 
+    - I'm eager to learn more about college.
+
+- intent: scholarship_schemes
+  examples: |
+    - What are the scholarship schemes?
+    - May I know more about us getting scholarship?
+    - I want to more about the scholarship schemes
+    - Please tell me about scholarship options.
+    - Can you tell me if we qualify for the scholarship?
+    - I want to understand better how to get the scholarship.
+    - How do we make sure we're eligible for the scholarship?
+    - I want to know our chances of getting the scholarship.
+    - Can you explain more about our eligibility for the scholarship?
+    - I want more information about the scholarship and how we can apply.
+    - What do we need to do to get the scholarship?
+    - Please give me more details about our chances of getting the scholarship.
+    - I'm curious about the scholarship and how it relates to us.
+    - Can you give me more information about applying for the scholarship?
+    - I need clearer information about applying for the scholarship.
+
+- intent: college_timing
+  examples: |
+    - what is the college timing?
+    - start and end time of college
+    - How many days a week and what time?
+    - What are the operating hours of the college?
+    - When does the college open and close?
+    - Could you provide the schedule for the college?
+    - What are the hours of operation for the college?
+    - What time does the college start and end?
+    - May I know the college's time schedule?
+    - When is the college open and when does it close?
+    - Can you share the timings for the college?
+    - What are the hours during which the college is open?
+    - I'd like to know the timing for the college, please.
+
+- intent: college_facilities
+  examples: |
+    - what are the facilities available for students?
+    - What services can students use?
+    - What kinds of things can students access?
+    - What resources do students have?
+    - What is provided for students to use?
+    - What are the available amenities for students?
+    - What facilities are at the students' disposal?
+    - What services or equipment can students utilize?
+    - What is accessible for students' use?
+    - What can students take advantage of?
+    - What facilities are provided for students?
+
+- intent: admission_requirements
+  examples: |
+    - reuirements list
+    - What are the requirements for getting admission?
+    - What do I need to get admission?
+    - What are the things I must have for admission?
+    - Can you tell me what's needed to get into the school?
+    - What are the necessary items for admission?
+    - What do I have to have to get admitted?
+    - Can you explain what's required to get accepted?
+    - What things do I need to get admission?
+    - What are the essentials for admission?
+    - Can you list what's necessary for getting into the program?
+    - What are the must-haves for admission?
+
+- intent: user_commends
+  examples: |
+    - okay, thank you
+    - Thank you for providing me information
+    - Good to know about the informations
+    - Thanks alot
+    - tysm
+    - thank you so much
+    - ty
+    - thanks for this much of information
+    - Your response is commendable 
+    - Thank you for all the helpful info you gave me.
+    - You did really well by giving me so much good stuff.
+    - Thanks for sharing all that helpful info with me.
+    - You did an awesome job by telling me all that.
+    - Thank you for giving me so much useful stuff to know.
+    - You did a great job telling me all that good info.
+    - Thanks a lot for sharing so much helpful info with me.
+    - You did really good by telling me all that useful stuff.
+    - Thank you for giving me all that helpful info.
+    - You did a fantastic job by sharing all that good stuff with me.
