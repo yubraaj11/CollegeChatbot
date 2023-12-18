@@ -232,7 +232,7 @@ nlu:
 
 - intent: admission_with_rank_in_particular_program
   examples: |
-    - Am I be able to get admission with [4150]{rank} rank in [bct]{program} program?
+    - Am I be able to get admission with [4150](rank) rank in [bct](program) program?
     - What are the chances of a person getting admission to [bct](program) program while having [5600](rank)?
     - What are the odds of someone securing admission to the [bct](program) program with a ranking of [3200](rank)?
     - can i be able to get admission to this college with [2800](rank) rank in [bex](program) program.

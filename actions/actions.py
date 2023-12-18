@@ -95,3 +95,25 @@ class ActionHelloWorld(Action):
         # dispatcher.utter_message(text="Hello World!")
 
         return []
+
+class ActionAdmissionConfidence(Action):
+    def name(self) -> Text:
+        return "action_admission_confidence"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        program = tracker.latest_message.get('entties', [{'entity': 'program', 'value': None}])
+        rank = tracker.latest_message.get('entties', [{'entity': 'rank', 'value': None}])
+
+        if program == 'bct':
+            dispatcher.utter_message(text="Computer Program")
+        elif program == 'bei':
+            dispatcher.utter_message(text="Electronics Program")
+        else:
+            dispatcher.utter_message(text="no solution")
+
+
+
+        return []
