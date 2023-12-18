@@ -230,6 +230,7 @@ nlu:
     - Thank you for giving me all that helpful info.
     - You did a fantastic job by sharing all that good stuff with me.
 
+
 - intent: admission_with_rank_in_particular_program
   examples: |
     - Am I be able to get admission with [4150](rank) rank in [bct](program) program?
