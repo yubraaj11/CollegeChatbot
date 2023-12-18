@@ -6,25 +6,48 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+- story: Sad path
+  steps: 
+  - intent: goodbye
   - action: utter_goodbye
+
+- story: College Detail
+  steps:
+  - intent: college_detail
+  - action: utter_say_collegeDetail
+
+
+- story: program information
+  steps: 
+  - intent: program_info
+  - action: action_which_program
+  - intent: program_name
+    entities:
+      - program: "bct"
+  - action: action_query_database
+
+- story: Scholarship Scheme
+  steps: 
+  - intent: scholarship_schemes
+  - action: utter_scholarship_detail
+
+- story: Admission Requirements
+  steps:
+  - intent: admission_requirements
+  - action: utter_say_admission_requirements
+  
+- story: College Timing
+  steps:  
+  - intent: college_timing
+  - action: utter_college_timing
+
+- story: College Facility
+  steps:  
+  - intent: college_facilities
+  - action: utter_say_collegeFacility
+
+- story: Feel Good to Serve
+  steps: 
+  - intent: user_commends
+  - action: utter_loved_to_help
