@@ -104,16 +104,19 @@ class ActionAdmissionConfidence(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        program = tracker.latest_message.get('entties', [{'entity': 'program', 'value': None}])
-        rank = tracker.latest_message.get('entties', [{'entity': 'rank', 'value': None}])
+        program_entity = next(tracker.get_latest_entity_values("program"), None)
+        rank = next(tracker.get_latest_entity_values("rank"), None)
 
-        if program == 'bct':
-            dispatcher.utter_message(text="Computer Program")
-        elif program == 'bei':
-            dispatcher.utter_message(text="Electronics Program")
+        if program_entity == 'bct':
+            if rank <= 5000:
+                response = f"You are probable to get admission in Computer Program."
+            else:
+                response = f"The probability of you getting admission with {rank} rank is less. However, you can still contact to the Computer Department."
+
+        elif program_entity == 'bei':
+            response = f"Electronics, Communication and Information Engineering department doesnot have rank criteria to get admission. However, this department offers scholarships based on ranks."
         else:
-            dispatcher.utter_message(text="no solution")
+            response =  f"I am currently unable to parse information regarding {program_entity} program."
 
-
-
+        dispatcher.utter_message(text=response)
         return []
