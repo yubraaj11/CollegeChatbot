@@ -35,7 +35,7 @@ class ActionQueryDatabase(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         # Connect to the database
-        conn = sqlite3.connect('university.db')  # Update with your database path
+        conn = sqlite3.connect('Database\ProgramDetail.db')  # Update with your database path
 
         if conn:
             program_entity = next(tracker.get_latest_entity_values('program'), None)
