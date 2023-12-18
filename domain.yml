@@ -32,7 +32,7 @@ actions:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! I am College Chatbot. How may I help you?"
 
 
 

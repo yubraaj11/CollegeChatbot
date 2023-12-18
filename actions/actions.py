@@ -59,7 +59,7 @@ class ActionQueryDatabase(Action):
                         )
                         dispatcher.utter_message(text=response)
                 else:
-                    dispatcher.utter_message(template="utter_no_info", program=program_entity)
+                    dispatcher.utter_message(text=f"I dont have any information about the {program_entity} program you insisted.")
                 
                 conn.close()
 
@@ -74,7 +74,7 @@ class ActionSpecifyProgram(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Which program do you want to knwo about?")
+        dispatcher.utter_message(text="Which program do you want to know about?")
 
         return []
 
