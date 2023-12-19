@@ -30,7 +30,7 @@ To train the chatbot, you can use the following command:<br />
 
 ## Running the Chatbot
 **Step 1: To run the chatbot, you can use the following command:**<br />
-```rasa run```
+```rasa run --enable-api```
 
 **Step 2: For basic validations you need to be connected to action server**<br />
 To run the action server, you can use the following command:<br />
