@@ -99,17 +99,12 @@ class ActionAdmissionConfidence(Action):
 
         elif program_entity == 'bei':
             response = (f"Electronics, Communication and Information Engineering department doesnot have rank criteria to get admission. However, this department offers scholarships based on ranks."
-                        f" 1. Rank '1 - 1000': Full Fee -> 80,000/- to 4,90,000/-"
-                        f" 2. Rank '1000 - 2000': Full Fee -> 5,40,000/-"
-                        f" 3. Rank '2000 - 3000': Full Fee -> 5,90,000/-"
-                        f" 4. Rank '3000 - 4000': Full Fee -> 6,40,000/-"
-                        f" 5. Rank 'above 5000': Full Fee -> 6,90,000/-"
+                        f"\n 1. Rank '1 - 1000': Full Fee -> 80,000/- to 4,90,000/-"
+                        f"\n 2. Rank '1000 - 2000': Full Fee -> 5,40,000/-"
+                        f"\n 3. Rank '2000 - 3000': Full Fee -> 5,90,000/-"
+                        f"\n 4. Rank '3000 - 4000': Full Fee -> 6,40,000/-"
+                        f"\n 5. Rank 'above 5000': Full Fee -> 6,90,000/-"
                         )
-
-
-
-
-
         else:
             response =  f"I am currently unable to parse information regarding {program_entity} program."
 
