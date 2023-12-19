@@ -53,6 +53,7 @@ The chatbot's behavior and responses are defined in the data/nlu.yml and data/do
 ---
 
 # ScreenShot of the UI in Streamlit
-![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/20685f74-9e12-49ea-8fb1-4dc365ab09d3)
+![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/b06047ab-03f7-4be1-b8d4-f134e3addbfc)
+
 
 
