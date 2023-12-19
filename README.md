@@ -40,10 +40,10 @@ To run the action server, you can use the following command:<br />
 Now we have the Rasa server up and running, and the chatbot will be available to chat with through the Rasa command line interface.
 To talk with the bot, you can use the following command:<br />
 ```rasa shell```
-## OR
 
-**Step 3: Instead of running chatbot via CLI, you can run it via *Streamlit* <br />
-To run via streamlit
+
+## Instead of running chatbot via CLI, you can run it via *Streamlit* <br />
+To run via streamlit: <br />
 ```streamlit run UI/app.py```
 
 
