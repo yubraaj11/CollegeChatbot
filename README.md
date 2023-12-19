@@ -1,7 +1,7 @@
 # CollegeChatbot
 
 ## Introduction
-Welcome to the College Chatbot! This chatbot has been developed using open source machine learning framework [Rasa](https://rasa.com/). The chatbot allows users to ask a college information. It can  be extended to handle queries related to `college details``, details about `specific programs`, `scholarship schemes`, `college facilities` via database integration.
+Welcome to the College Chatbot! This chatbot has been developed using open source machine learning framework [Rasa](https://rasa.com/). The chatbot allows users to ask a college information. It can  be extended to handle queries related to `college details`, details about `specific programs`, `scholarship schemes`, `college facilities` via database integration.
 
 ## About Rasa
 Rasa is a open-source machine learning framework that enables the development of conversational AI chatbots. The Rasa stack consists of two components:
@@ -40,8 +40,8 @@ To run the action server, you can use the following command:<br />
 Now we have the Rasa server up and running, and the chatbot will be available to chat with through the Rasa command line interface.
 To talk with the bot, you can use the following command:<br />
 ```rasa shell```
-
-### Instead of running chatbot via CLI, you can run it via `Streamlit`
+## OR
+**Step 3: Instead of running chatbot via CLI, you can run it via `Streamlit`
 To run via streamlit
 ```streamlit run UI/app.py```
 
