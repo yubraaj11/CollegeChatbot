@@ -49,3 +49,10 @@ To run via streamlit: <br />
 
 ## Customizing the Chatbot<br />
 The chatbot's behavior and responses are defined in the data/nlu.yml and data/domain.yml files. You can modify these files to add your own custom intents and responses. Additionally, the chatbot's conversational flow is defined in the stories.yml file, and you can modify this file to add custom actions and change the flow of the conversation.
+
+---
+
+# ScreenShot of the UI in Streamlit
+![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/20685f74-9e12-49ea-8fb1-4dc365ab09d3)
+
+
