@@ -102,7 +102,7 @@ nlu:
     - electrical engineering
     - electrical
 
-- synonym: bex
+- synonym: bei
   examples: |
     - electronics, communication and informtion engineering
     - electronics
@@ -243,7 +243,7 @@ nlu:
     - Can I secure admission with a rank of [2222](rank) in the [bct](program) program?
     - What are the chances of being admitted to the [bct](program) program with a rank of [3242](rank)?
     - What are the odds of securing admission to the [bct](program) program with a ranking of [4355](rank?
-    - Would I be able to gain admission to this college with a rank of [4356](rank) in the [3453](program) program?
+    - Would I be able to gain admission to this college with a rank of [4356](rank) in the [electronics](program) program?
     - The likelihood of admission to the [bex](program) program with a rank of [1345](rank).
     - I wish to ascertain the likelihood of securing admission to the prestigious college in [computer engineering](program) with a rank of [5775](rank).
     - Could you provide insights on my chances of securing a seat in the [electronics](program) program with a rank of [5643](rank?
