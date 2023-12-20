@@ -1,7 +1,7 @@
 # CollegeChatbot
 
 ## Introduction
-Welcome to the College Chatbot! This chatbot has been developed using open source machine learning framework [Rasa](https://rasa.com/). The chatbot allows users to ask a college information. It can  be extended to handle queries related to `college details``, details about `specific programs`, `scholarship schemes`, `college facilities` via database integration.
+Welcome to the College Chatbot! This chatbot has been developed using open source machine learning framework [Rasa](https://rasa.com/). The chatbot allows users to ask a college information. It can  be extended to handle queries related to `college details`, details about `specific programs`, `scholarship schemes`, `college facilities` via database integration.
 
 ## About Rasa
 Rasa is a open-source machine learning framework that enables the development of conversational AI chatbots. The Rasa stack consists of two components:
@@ -30,7 +30,7 @@ To train the chatbot, you can use the following command:<br />
 
 ## Running the Chatbot
 **Step 1: To run the chatbot, you can use the following command:**<br />
-```rasa run```
+```rasa run --enable-api```
 
 **Step 2: For basic validations you need to be connected to action server**<br />
 To run the action server, you can use the following command:<br />
@@ -41,10 +41,19 @@ Now we have the Rasa server up and running, and the chatbot will be available to
 To talk with the bot, you can use the following command:<br />
 ```rasa shell```
 
-### Instead of running chatbot via CLI, you can run it via `Streamlit`
-To run via streamlit
+
+## Instead of running chatbot via CLI, you can run it via *Streamlit* <br />
+To run via streamlit: <br />
 ```streamlit run UI/app.py```
 
 
 ## Customizing the Chatbot<br />
-The chatbot's behavior and responses are defined in the data/nlu.yml and data/domain.yml files. You can modify these files to add your own custom intents and responses. Additionally, the chatbot's conversational flow is defined in the stories.yml file, and you can modify this file to add custom actions and change the flow of the conversation.
+The chatbot's behavior and responses are defined in the data/nlu.yml and domain.yml files. You can modify these files to add your own custom intents and responses. Additionally, the chatbot's conversational flow is defined in the stories.yml file, and you can modify this file to add custom actions and change the flow of the conversation.
+
+---
+
+# ScreenShot of the UI in Streamlit
+![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/b06047ab-03f7-4be1-b8d4-f134e3addbfc)
+
+
+
