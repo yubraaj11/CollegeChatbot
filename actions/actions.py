@@ -130,7 +130,7 @@ class ActionAskSyllabus(Action):
             program_entity = next(tracker.get_latest_entity_values('program'), None)
 
             
-            if program_entity:
+            if program_entity == 'bct' or program_entity == 'bei' or program_entity == 'bce':
                 # Perform a database query based on the program
                 cursor = conn.cursor()
                 cursor.execute('''
@@ -143,9 +143,10 @@ class ActionAskSyllabus(Action):
                         prog, link = row
                         response = (f"You can find the syllabus of program {prog} via this link: {link}  ")
                         dispatcher.utter_message(text=response)
-                else:
+            
+            else:
                     dispatcher.utter_message(text=f"Sorry! Currently I dont have any information regarding syllabus about the {program_entity} program you insisted.")
                 
-                conn.close()
+            conn.close()
 
         return []
