@@ -248,5 +248,21 @@ nlu:
     - I wish to ascertain the likelihood of securing admission to the prestigious college in [computer engineering](program) with a rank of [5775](rank).
     - Could you provide insights on my chances of securing a seat in the [electronics](program) program with a rank of [5643](rank?
 
+- intent: Ask_syllabus
+  examples: |
+    - is it possible for me to look through syllabus of [bct](program) faculty
+    - is it possible for me to look through syllabus of [bct](program) program
+    - is it possible for me to look through syllabus of [bei](program) faculty
+    - is it possible for me to look through syllabus of [bei](program) program
+    - is it possible for me to look through syllabus of [bce](program) faculty
+    - is it possible for me to look through syllabus of [bce](program) program
+    - provide me the syllabus for the program [bct](program)
+    - mind providing me the syllabus for the program [bce](program)
+    - please provide me the syllabus for the prorgam [bei](program)
+    - can you provide me the syllabus for [bce](program) program
+    - can i get syllabus for [bei](program) program
+    - Information regrding the course of [bct](prorgam) faculty
+    - subject details about the program [bct](program) 
+
 
 
