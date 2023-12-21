@@ -51,7 +51,8 @@ stories:
   steps: 
   - intent: user_commends
   - action: utter_loved_to_help
-  - action: utter_brochure
+
+
 
 - story: Admission Probability
   steps:
