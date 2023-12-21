@@ -104,6 +104,10 @@ responses:
   - text: I consider it my solemn duty to assist you. Please do keep me in mind in the foreseeable future.
   - text: It's my genuine commitment to support you. I kindly request you to remember me in the upcoming times.
 
+
+  utter_brochure:
+  - text: You can View college brochure via this link: https://rb.gy/x427u6
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
