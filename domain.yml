@@ -30,6 +30,7 @@ actions:
   - action_explain_program
   - action_query_database
   - action_admission_confidence
+  - action_ask_syllabus
 
 responses:
   utter_greet:

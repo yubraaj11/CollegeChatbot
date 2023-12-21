@@ -53,7 +53,7 @@ class ActionQueryDatabase(Action):
                     for row in rows:
                         prog, program_name, fee, CourseDuration, SeatsNo, hod = row
                         response = (
-                            f"The program in question is '{program_name}' with an enrollment capacity of "
+                            f"The program you inquired about is '{program_name}' with an enrollment capacity of "
                             f"{SeatsNo} seats. Its duration spans over {CourseDuration}, and the overall fee "
                             f"for this course amounts to approximately {fee}."
                         )
@@ -112,4 +112,40 @@ class ActionAdmissionConfidence(Action):
             response =  f"I am currently unable to parse information regarding {program_entity} program."
 
         dispatcher.utter_message(text=response)
+        return []
+    
+
+class ActionAskSyllabus(Action):
+    def name(self) -> Text:
+        return "action_ask_syllabus"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        # Connect to the database
+        conn = sqlite3.connect('Database\SyllabusDetail.db')  # Update with your database path
+
+        if conn:
+            program_entity = next(tracker.get_latest_entity_values('program'), None)
+
+            
+            if program_entity:
+                # Perform a database query based on the program
+                cursor = conn.cursor()
+                cursor.execute('''
+                    SELECT * FROM syllabus WHERE prog = ?
+                ''', (program_entity,))
+                rows = cursor.fetchall()
+
+                if rows:
+                    for row in rows:
+                        prog, link = row
+                        response = (f"You can find the syllabus of program {prog} via this link: {link}  ")
+                        dispatcher.utter_message(text=response)
+                else:
+                    dispatcher.utter_message(text=f"Sorry! Currently I dont have any information regarding syllabus about the {program_entity} program you insisted.")
+                
+                conn.close()
+
         return []
