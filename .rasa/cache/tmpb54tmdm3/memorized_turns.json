@@ -1,0 +1,29 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidkptZXAxSUZRaWJpZlJoLFC6urY0FAPywIrg=": "utter_say_admission_requirements",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidkptZXAxSUZRaWJpZlJoLFC6uJWBoaUlJalF8cWJlPA79RNsTCwBir0vc": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xArMjU/Oz81NzUsprq2NBQDU4h7i": "utter_loved_to_help",
+    "eJyFjMEJwCAMAFdxgE7gKqUE0UAFTUSjH3H3hrZ/f3dw3DnXYWapOMB5iUzWzA+AXEZrfkmxCZK2vWHVJpKq2FfBc85Ioa3Nq4tonXhgAGG4MZXt8XoAy7w+ng==": "action_listen",
+    "eJwtysEJwCAMQNFVMoATeOscImJLKKEaxcRCEXev0N7+h+fGNDBqwzvEQ6mwhfFF4JjRwj+JRJGX7YJtGWQlJRQLrrZytpi9AeJl1MImV5Anpbh3mdO/fJ0mFg==": "action_ask_syllabus",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrUvJLMkszUYiuF6IKi/PSixNxYHYXMPKCaEisFx+Ls+OLKnJzEpNLiWuLMT0TWQo4tsQBv3Uz5": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODkjPyexqDgjsyAeyE7NTS2urY0FAJWsIVU=": "utter_scholarship_detail",
+    "eJyNjEEKgDAMBL/SB/iCfkUkhBpooLYlSb2U/t2CHrzpbQZmd+1jcb0KnYDBuGTv+g2Q8SDvHkmsRnm2TUlmw3mqeachloSikStMpoN0fDw2MxJ4D3cy5PTzfLsAP9ZFkg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT8nJzU9Nb4kMzczL722NhYA8o0fMA==": "utter_college_timing",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT8nJzU9Nb4kMzczL72WgGGlJSWpRfFoegiaGQsAfpc/mA==": "action_listen",
+    "eJwti1EKhDAMBa+SA/QEvYpICBo0rI0libsfpXe3sv694c1MrSdo1fiLtIScmqH9ByoVzvDCIR6sw72cbTisISHsGaZq52ZUEhjpZ04gOswY5VrE/Yl/Ejs+L4piJQtZroMM37L3+QaehjQx": "action_admission_confidence",
+    "eJy1jkEKwzAMBL+iB/gF/koIQjhqKxrLRlbag8nf65BAr730tmJnxE59D9Cr8QspuRSN0M+ASpkjXMcqzVkHuzW2wbC6uHCLMFUrd6McwEifcwDRQfowlyytHfJb/IFHi6JYyVzStpLhZe6/Tfj+S0VvsrAm/teg+QPurmxW": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT8nJzU9NT4tMTkzJ7MkM7W4tjYWAHHhIMU=": "utter_say_collegeFacility",
+    "eJyNjNEJwCAMBVfJAJ3AAbpEKUEkLYFUi8aCiLtX0P/27x3cva22Beod6UHrlIM3UMdAby8yMEE4Kfnu5kSxO+w7qgEXROgkPKxjYWVK7eMwq1LEZAvOdh1p+Xe+v9+KRLw=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCg/vSgxNz4zLy2/tjYWALX8HnE=": "action_which_program",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCg/vSgxNz4zLy2/ljijyjMykzPioRoJmRgLAIPYPgw=": "action_listen",
+    "eJytzkEKgCAQBdCrzAE8gVcREZEpB2oUtVqId8/IlasW7ebD/49RtQmoMeFprCsUWEJ9D8N2RwkjbJQLcu8eGVPvEPdYJMQU1mR3Q7yE9o26PDlvxvAXcX6uO1QIswQ1NC1g9h+hNX0DoZhifA==": "action_query_database",
+    "eJytzkEKg0AMBdCr5ACeYK4iElKbaqBmbCZWZPDuTumsXEnpLh9+XtLmvYE8G7+RepeoAfJ3QKWJA9TwlOSspbskttIRLdEDzBYHowlFH3G/Rq2j9CPWxb+I5+eKIy6cArRV6xo4+x/hov9a2Da8k9ONEv90pzsAvF+KJw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytbY2FgAh+hxX": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytZaAKaUlJalF8TDFuE2JBQCMqTcN": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT8nJzU9NT4ltSQxM6e2NhYA8dkfGw==": "utter_say_collegeDetail",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT8nJzU9NT4ltSQxM6eWgGGlJSWpRfHFiZXxUH0uEG0EjY0FADUSQIY=": "action_listen"
+  }
+}
