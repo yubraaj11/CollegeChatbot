@@ -60,3 +60,10 @@ stories:
         - program: "bct"
         - rank: 500
     - action: action_admission_confidence
+
+- story: Ask Syllabus
+  steps:
+    - intent: Ask_syllabus
+      entities:
+        - program: "bct"
+    - action: action_ask_syllabus
