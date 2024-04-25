@@ -55,7 +55,7 @@ The chatbot's behavior and responses are defined in the data/nlu.yml and domain.
 # ScreenShot of the UI in Streamlit
 ![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/2c688258-dc0c-4cf2-aba3-bb70b54e0280)
 ![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/dc329dc4-e3bc-499c-b5d0-0ef4f342ea2f)
-![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/ae198634-ce88-45d9-9fff-a56be69168f5)
+![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/8eeb465f-de32-401d-889e-a5ab8ca25d60)
 ![image](https://github.com/yubraaj11/CollegeChatbot/assets/84309182/49952a59-8a58-4fd2-af38-64c1dda82536)
 
 
