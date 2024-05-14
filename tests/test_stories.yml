@@ -1,91 +1,181 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+# #### This file contains tests to evaluate that your bot behaves as expected.
+# #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
-stories:
-- story: happy path 1
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+# stories:
+# - story: happy path 1
+#   steps:
+#   - user: |
+#       hello there!
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       amazing
+#     intent: mood_great
+#   - action: utter_happy
 
-- story: happy path 2
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+# - story: happy path 2
+#   steps:
+#   - user: |
+#       hello there!
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       amazing
+#     intent: mood_great
+#   - action: utter_happy
+#   - user: |
+#       bye-bye!
+#     intent: goodbye
+#   - action: utter_goodbye
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+# - story: sad path 1
+#   steps:
+#   - user: |
+#       hello
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       not good
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       yes
+#     intent: affirm
+#   - action: utter_happy
 
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+# - story: sad path 2
+#   steps:
+#   - user: |
+#       hello
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       not good
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       not really
+#     intent: deny
+#   - action: utter_goodbye
 
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+# - story: sad path 3
+#   steps:
+#   - user: |
+#       hi
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       very terrible
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       no
+#     intent: deny
+#   - action: utter_goodbye
 
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+# - story: say goodbye
+#   steps:
+#   - user: |
+#       bye-bye!
+#     intent: goodbye
+#   - action: utter_goodbye
 
-- story: bot challenge
+# - story: bot challenge
+#   steps:
+#   - user: |
+#       are you a bot?
+#     intent: bot_challenge
+#   - action: utter_iamabot
+
+- story: Test Greet Intent
   steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+    - user: |
+        Hi there!
+      intent: greet
+    - action: utter_greet
+
+- story: Test Goodbye Intent
+  steps:
+    - user: |
+        I have to go now. Goodbye!
+      intent: goodbye
+    - action: utter_goodbye
+
+- story: Test College Detail Intent
+  steps:
+    - user: |
+        Can you tell me about the college?
+      intent: college_detail
+    - action: utter_say_collegeDetail
+
+- story: Test Program Information Intent
+  steps:
+    - user: |
+        What programs do you offer?
+      intent: program_info
+    - action: action_which_program
+
+    - user: |
+        I'm interested in the BCT program.
+      intent: program_name
+      entities:
+        - program: "bct"
+    - action: action_query_database
+    - action: utter_want_syllabus_details
+
+- story: Test Scholarship Scheme Intent
+  steps:
+    - user: |
+        Can you tell me about scholarship schemes?
+      intent: scholarship_schemes
+    - action: utter_scholarship_detail
+
+- story: Test Admission Requirements Intent
+  steps:
+    - user: |
+        What are the admission requirements?
+      intent: admission_requirements
+    - action: utter_say_admission_requirements
+
+- story: Test College Timing Intent
+  steps:
+    - user: |
+        What are the timings of the college?
+      intent: college_timing
+    - action: utter_college_timing
+
+- story: Test College Facility Intent
+  steps:
+    - user: |
+        What facilities does the college provide?
+      intent: college_facilities
+    - action: utter_say_collegeFacility
+
+- story: Test User Commends Intent
+  steps:
+    - user: |
+        Thank you for your help!
+      intent: user_commends
+    - action: utter_loved_to_help
+
+- story: Test Admission Probability Intent (Positive Path)
+  steps:
+    - user: |
+        What is the probability of admission with rank 500 in the BCT program?
+      intent: admission_with_rank_in_particular_program
+      entities:
+        - program: "bct"
+        - rank: 500
+    - action: action_admission_confidence
+
+- story: Test Ask Syllabus Intent
+  steps:
+    - user: |
+        Can you provide details about the syllabus for the BCT program?
+      intent: Ask_syllabus
+      entities:
+        - program: "bct"
+    - action: action_ask_syllabus

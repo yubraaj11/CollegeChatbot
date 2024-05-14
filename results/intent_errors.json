@@ -1,0 +1,154 @@
+[
+  {
+    "text": "Surely",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.661291241645813
+    }
+  },
+  {
+    "text": "Yes",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.524648904800415
+    }
+  },
+  {
+    "text": "I would love to have a look at the syllabus",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "Ask_syllabus",
+      "confidence": 0.967923641204834
+    }
+  },
+  {
+    "text": "Yes, I want to know more about the syllabus",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "Ask_syllabus",
+      "confidence": 0.898232638835907
+    }
+  },
+  {
+    "text": "of course",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "Ask_syllabus",
+      "confidence": 0.5826727747917175
+    }
+  },
+  {
+    "text": "ofc",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "program_name",
+      "confidence": 0.5345257520675659
+    }
+  },
+  {
+    "text": "whynot",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.31287816166877747
+    }
+  },
+  {
+    "text": "fantastic news",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "user_commends",
+      "confidence": 0.9604776501655579
+    }
+  },
+  {
+    "text": "yes, I want to know more",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "user_commends",
+      "confidence": 0.31414076685905457
+    }
+  },
+  {
+    "text": "yes, I want to know more about the syllabus",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "Ask_syllabus",
+      "confidence": 0.8984583020210266
+    }
+  },
+  {
+    "text": "go ahead",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9834469556808472
+    }
+  },
+  {
+    "text": "go on",
+    "intent": "Acknowledge_syllabus",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9843387007713318
+    }
+  },
+  {
+    "text": "No, I dont want",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "program_info",
+      "confidence": 0.181766539812088
+    }
+  },
+  {
+    "text": "Keep that with yourself",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "user_commends",
+      "confidence": 0.8171343207359314
+    }
+  },
+  {
+    "text": "Naah",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7586914896965027
+    }
+  },
+  {
+    "text": "Currently, No please",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.32560133934020996
+    }
+  },
+  {
+    "text": "No, I dont want to.",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "program_info",
+      "confidence": 0.24174858629703522
+    }
+  },
+  {
+    "text": "Next time",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "college_timing",
+      "confidence": 0.9842044711112976
+    }
+  },
+  {
+    "text": "Not really",
+    "intent": "Deny",
+    "intent_prediction": {
+      "name": "user_commends",
+      "confidence": 0.9987691044807434
+    }
+  }
+]

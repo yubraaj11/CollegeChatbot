@@ -26,12 +26,16 @@ stories:
     entities:
       - program: "bct"
   - action: action_query_database
+  - action: utter_want_syllabus_details
+  - action: 
 
+# Story about scholarship schemes
 - story: Scholarship Scheme
   steps: 
   - intent: scholarship_schemes
   - action: utter_scholarship_detail
 
+# 
 - story: Admission Requirements
   steps:
   - intent: admission_requirements
@@ -54,13 +58,14 @@ stories:
 
 
 
-- story: Admission Probability
+- story: Admission Probability positive path
   steps:
     - intent: admission_with_rank_in_particular_program
       entities:
         - program: "bct"
         - rank: 500
     - action: action_admission_confidence
+
 
 - story: Ask Syllabus
   steps:

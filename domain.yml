@@ -18,12 +18,6 @@ entities:
   - program
   - rank
 
-# slots:
-#   program:
-#     type: text
-#     mappings:
-#       - type: from_entity
-#         entity: program
 
 actions:
   - action_which_program
@@ -31,18 +25,25 @@ actions:
   - action_query_database
   - action_admission_confidence
   - action_ask_syllabus
+  - action_default_fallback
 
 responses:
   utter_greet:
   - text: "Hey! I am College Chatbot. How may I help you?"
+  - text: "Hi! I am College Chatbot. How may I help you?"
+  - text: "Hello! I am College Chatbot. How may I help you?"
+  - text: "College Chatbot here! How may I help you?" 
 
-
+  utter_default:
+  - text: "Sorry, I didn't get that. Can you please rephrase?"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "See you again"
+  - text: "Have a nice day"
 
   utter_say_collegeDetail:
-  - text: Kathmandu Engineering College is a prestigious TU affiliated college, established in 1998.  
+  - text: Kathmandu Engineering College, established in 1998 AD, is a premier private institution affiliated with IOE, TU. Renowned for quality education, it offers a range of engineering programs. With top-notch facilities and expert faculty, it nurtures innovative thinkers and prepares students for success in the dynamic field of engineering.  
 
 
   utter_scholarship_detail:
@@ -106,8 +107,12 @@ responses:
   - text: I consider it my solemn duty to assist you. Please do keep me in mind in the foreseeable future. You can View college brochure via this link->  https://rb.gy/x427u6
   - text: It's my genuine commitment to support you. I kindly request you to remember me in the upcoming times. You can View college brochure via this link->  https://rb.gy/x427u6
 
-
-
+  utter_want_syllabus_details:
+  - text: Do you want to know about syllabus?
+  - text: Would you like to know about particular program's syllabus?
+  - text: Would you mind if I provide you with syllabus details?
+  - text: Can I share core syllabus details?
+  - text: Can I provide you with syllabus details? 
 
 session_config:
   session_expiration_time: 60

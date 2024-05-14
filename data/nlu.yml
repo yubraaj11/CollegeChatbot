@@ -264,6 +264,27 @@ nlu:
     - Information regrding the course of [bct](program) faculty
     - subject details about the program [bct](program) 
 
+# - intent: Acknowledge_syllabus
+#   examples: |
+#     - Surely
+#     - Yes
+#     - I would love to have a look at the syllabus
+#     - Yes, I want to know more about the syllabus
+#     - of course
+#     - ofc
+#     - whynot
+#     - fantastic news
+#     - yes, I want to know more
+#     - yes, I want to know more about the syllabus
+#     - go ahead
+#     - go on 
 
-
-
+# - intent: Deny
+#   examples: |
+#     - No, I dont want
+#     - Keep that with yourself
+#     - Naah
+#     - Currently, No please
+#     - No, I dont want to.
+#     - Next time
+#     - Not really
