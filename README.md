@@ -1,7 +1,7 @@
 # CollegeChatbot
 
 <div>
-    <a href="https://doi.org/10.3126/kjse.v8i1.69263">Cite this work: </a>
+    <a href="https://doi.org/10.3126/kjse.v8i1.69263">Cite this work:  </a>
 </div>
 <br>
 
