@@ -1,5 +1,11 @@
 # CollegeChatbot
 
+<div>
+    <a href="https://doi.org/10.3126/kjse.v8i1.69263">Cite this work: DOI: YOUR_DOI</a>
+</div>
+<br>
+
+
 ## Introduction
 Welcome to the College Chatbot! This chatbot has been developed using open source machine learning framework [Rasa](https://rasa.com/). The chatbot allows users to ask a college information. It can  be extended to handle queries related to `college details`, details about `specific programs`, `scholarship schemes`, `college facilities` via database integration.
 
