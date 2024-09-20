@@ -1,9 +1,6 @@
 # CollegeChatbot
 
-<div>
-    <a href="https://doi.org/10.3126/kjse.v8i1.69263">Cite this work:  </a>
-</div>
-<br>
+[![DOI](https://zenodo.org/badge/732656458.svg)](https://zenodo.org/doi/10.5281/zenodo.13801323)
 
 
 ## Introduction
